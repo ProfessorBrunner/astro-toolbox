@@ -20,9 +20,8 @@ Let us follow some basic conventions so that our code is easily understood by ot
 ###(ii) Imports
 
 1. Do not pollute namespaces. So use variable names for your package, e.g.:
->p
-import numpy as np
-import pandas as pd
+>import numpy as np  
+>import pandas as pd
 
 
 2. Imports should usually be on separate lines, e.g.:
@@ -34,7 +33,7 @@ import pandas as pd
 
 3. It's okay to say this though:
 
->pfrom subprocess import Popen, PIPE
+>from subprocess import Popen, PIPE
 
 4. Imports are always put at the top of the file, just after any module comments and docstrings, and before module globals and constants.
 
@@ -47,37 +46,37 @@ import pandas as pd
 
 Immediately inside parentheses, brackets or braces.  
 
->pYes: spam(ham[1], {eggs: 2})
->pNo:  spam( ham[ 1 ], { eggs: 2 } )
+>Yes: spam(ham[1], {eggs: 2})  
+>No:  spam( ham[ 1 ], { eggs: 2 } )
 
 Immediately before a comma, semicolon, or colon:  
 
->pYes: if x == 4: print x, y; x, y = y, x
->pNo:  if x == 4 : print x , y ; x , y = y , x
+>Yes: if x == 4: print x, y; x, y = y, x  
+>No:  if x == 4 : print x , y ; x , y = y , x
 
 Immediately before the open parenthesis that starts the argument list of a function call:  
 
->pYes: spam(1)
->pNo:  spam (1)
+>Yes: spam(1)  
+>No:  spam (1)
 
 Immediately before the open parenthesis that starts an indexing or slicing:  
 
->pYes: dict['key'] = list[index]
->pNo:  dict ['key'] = list [index]
+>Yes: dict['key'] = list[index]  
+>No:  dict ['key'] = list [index]
 
 More than one space around an assignment (or other) operator to align it with another.  
 
->pYes:
+>Yes:
 
->p x = 1
->p y = 2
->p long_variable = 3
+> x = 1
+> y = 2
+> long_variable = 3
 
->p No:
+> No:
 
->px             = 1
->py             = 2
->plong_variable = 3
+>x             = 1
+>y             = 2
+>long_variable = 3
 
 ###(ii) Other Recommendations
 
@@ -118,22 +117,22 @@ More than one space around an assignment (or other) operator to align it with an
 
 3. Inline comments are unnecessary and in fact distracting if they state the obvious. Don't do this:
 
->px = x + 1                 # Increment x
->pBut sometimes, this is useful:
+>x = x + 1                 # Increment x
+>But sometimes, this is useful:
 
->px = x + 1                 # Compensate for border
+>x = x + 1                 # Compensate for border
 
 ###(iv) Code Header
 
 1. When writing code specify a standard header block which tells others who has written the code and what functionality does it provide, e.g.,
 
->p#
->p# AUTHOR
->p# DATE
->p# BRIEF DESCRIPTION
->p#
->p# MODIFICATION DATE
->p#
+>#
+># AUTHOR
+># DATE
+># BRIEF DESCRIPTION
+>#
+># MODIFICATION DATE
+>#
 
 This should be followed by the initial author and by everyone else who modifies the code.
 
