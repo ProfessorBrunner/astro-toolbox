@@ -68,17 +68,17 @@ Immediately before the open parenthesis that starts an indexing or slicing:
 
 More than one space around an assignment (or other) operator to align it with another.  
 
->Yes:
+>Yes:  
 
-> x = 1
-> y = 2
-> long_variable = 3
+> x = 1  
+> y = 2  
+> long_variable = 3  
 
-> No:
+> No:  
 
->x             = 1
->y             = 2
->long_variable = 3
+>x             = 1  
+>y             = 2  
+>long_variable = 3  
 
 ###(ii) Other Recommendations
 
