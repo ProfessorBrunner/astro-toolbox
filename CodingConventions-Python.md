@@ -109,23 +109,22 @@ long_variable = 3</pre></code>
 2. An inline comment is a comment on the same line as a statement. Inline comments should be separated by at least two spaces from the statement. They should start with a # and a single space.
 
 3. Inline comments are unnecessary and in fact distracting if they state the obvious. Don't do this:
+<pre><code>x = x + 1                 # Increment x
+But sometimes, this is useful:
+x = x + 1                 # Compensate for border</pre></code>
 
->x = x + 1                 # Increment x
->But sometimes, this is useful:
-
->x = x + 1                 # Compensate for border
 
 ###(iv) Code Header
 
 1. When writing code specify a standard header block which tells others who has written the code and what functionality does it provide, e.g.,
-
->########
->######## AUTHOR
->######## DATE
->########BRIEF DESCRIPTION
->#########
->######### MODIFICATION DATE
->#########
+<pre><code>#
+# AUTHOR
+# DATE
+# BRIEF DESCRIPTION
+#
+# MODIFICATION DATE
+#
+</pre></code>
 
 This should be followed by the initial author and by everyone else who modifies the code.
 
@@ -166,11 +165,11 @@ Always use cls for the first argument to class methods.
 
 If a function argument's name clashes with a reserved keyword, it is generally better to append a single trailing underscore rather than use an abbreviation or spelling corruption. Thus class_ is better than clss. (Perhaps better is to avoid such clashes by using a synonym.)  
 
-###(viii)Method Names and Instance Variables
+###(vii)Method Names and Instance Variables
 
 Use the function naming rules: lowercase with words separated by underscores as necessary to improve readability.
 
-###(ix)Constants
+###(viii)Constants
 
 Constants are usually defined on a module level and written in all capital letters with underscores separating words. Examples include MAX_OVERFLOW and TOTAL.
 
