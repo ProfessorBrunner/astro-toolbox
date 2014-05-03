@@ -128,13 +128,13 @@ More than one space around an assignment (or other) operator to align it with an
 
 1. When writing code specify a standard header block which tells others who has written the code and what functionality does it provide, e.g.,
 
->######
->##### AUTHOR
->##### DATE
->#####BRIEF DESCRIPTION
->######
->###### MODIFICATION DATE
->######
+>########
+>######## AUTHOR
+>######## DATE
+>########BRIEF DESCRIPTION
+>#########
+>######### MODIFICATION DATE
+>#########
 
 This should be followed by the initial author and by everyone else who modifies the code.
 
