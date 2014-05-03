@@ -20,20 +20,17 @@ Let us follow some basic conventions so that our code is easily understood by ot
 ###(ii) Imports
 
 1. Do not pollute namespaces. So use variable names for your package, e.g.:
->import numpy as np  
->import pandas as pd
+<pre><code>import numpy as np  
+import pandas as pd</pre></code>
 
 
 2. Imports should usually be on separate lines, e.g.:
-
->Yes: import os
+<pre><code>Yes: import os  
      import sys
-
->No:  import sys, os
+No:  import sys, os</pre></code>
 
 3. It's okay to say this though:
-
->from subprocess import Popen, PIPE
+<pre><code>from subprocess import Popen, PIPE</pre></code>
 
 4. Imports are always put at the top of the file, just after any module comments and docstrings, and before module globals and constants.
 
@@ -45,40 +42,34 @@ Let us follow some basic conventions so that our code is easily understood by ot
 
 
 Immediately inside parentheses, brackets or braces.  
-
->Yes: spam(ham[1], {eggs: 2})  
->No:  spam( ham[ 1 ], { eggs: 2 } )
+<pre><code>Yes: spam(ham[1], {eggs: 2})  
+No:  spam( ham[ 1 ], { eggs: 2 } )</pre></code>
 
 Immediately before a comma, semicolon, or colon:  
 
->Yes: 
->if x == 4: print x, y; x, y = y, x  
->No:  
->if x == 4 : print x , y ; x , y = y , x
+<pre><code>Yes: 
+if x == 4: print x, y; x, y = y, x  
+No:  
+if x == 4 : print x , y ; x , y = y , x</pre></code>
 
 Immediately before the open parenthesis that starts the argument list of a function call:  
-
->Yes: spam(1)  
->No:  spam (1)
+<pre><code>Yes: spam(1)  
+No:  spam (1)</pre></code>
 
 Immediately before the open parenthesis that starts an indexing or slicing:  
-
->Yes: dict['key'] = list[index]  
->No:  dict ['key'] = list [index]
+<pre><code>Yes: dict['key'] = list[index]  
+No:  dict ['key'] = list [index]</pre></code>
 
 More than one space around an assignment (or other) operator to align it with another.  
 
->Yes:  
-
-> x = 1  
-> y = 2  
-> long_variable = 3  
-
-> No:  
-
->x             = 1  
->y             = 2  
->long_variable = 3  
+<pre><code>Yes:
+x = 1
+y = 2  
+long_variable = 3
+No:
+x             = 1
+y             = 2
+long_variable = 3</pre></code>
 
 ###(ii) Other Recommendations
 
