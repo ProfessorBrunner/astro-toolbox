@@ -25,12 +25,12 @@ import pandas as pd</pre></code>
 
 
 2. Imports should usually be on separate lines, e.g.:
-<pre><code>Yes: import os  
-     import sys
-No:  import sys, os</pre></code>
+<pre><code>Yes: import os as op_sys   
+         import sys as s
+No:  import sys as s, os as op_sys</pre></code>
 
 3. It's okay to say this though:
-<pre><code>from subprocess import Popen, PIPE</pre></code>
+<pre><code>from subprocess import Popen as pop, PIPE as pp</pre></code>
 
 4. Imports are always put at the top of the file, just after any module comments and docstrings, and before module globals and constants.
 
